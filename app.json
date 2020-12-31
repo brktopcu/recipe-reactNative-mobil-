@@ -1,0 +1,12 @@
+{
+  "name": "recipeMobile",
+  "displayName": "recipeMobile",
+  "expo": {
+    "name": "recipeMobile",
+    "slug": "recipeMobile",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
