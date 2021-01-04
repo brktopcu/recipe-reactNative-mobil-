@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Text, View, StyleSheet, Alert } from "react-native";
+import { Text, View, StyleSheet, Alert,TouchableWithoutFeedback,Keyboard } from "react-native";
 import { Input, Button } from "react-native-elements";
 import { MaterialIcons } from "@expo/vector-icons";
 import * as firebase from "firebase";
@@ -29,6 +29,7 @@ export class Register extends Component {
 
   render() {
     return (
+      <TouchableWithoutFeedback onPress={()=>{Keyboard.dismiss()}}>
       <View style={styles.container}>
         <Input
           placeholder="E-mail"
@@ -53,6 +54,7 @@ export class Register extends Component {
 
         <Button title="Register" onPress={this.handleRegister} />
       </View>
+      </TouchableWithoutFeedback>
     );
   }
 }
